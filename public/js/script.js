@@ -17,15 +17,15 @@ $form.addEventListener('submit', (e) => {
       'Content-type': 'application/json'
     },
     body: JSON.stringify({
-      latitud: parseInt($latitud.value),
-      altura: parseInt($altura.value),
+      latitud: parseFloat($latitud.value),
+      altura: parseFloat($altura.value),
       r0,
       r1,
       rk,
-      area: parseInt($area.value),
-      eff: parseInt($eff.value),
-      panels: parseInt($panels.value),
-      lost: parseInt($lost.value)
+      area: parseFloat($area.value),
+      eff: parseFloat($eff.value),
+      panels: parseFloat($panels.value),
+      lost: parseFloat($lost.value)
     })
   };
   console.log($altura.value);
