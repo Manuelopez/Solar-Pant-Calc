@@ -42,7 +42,7 @@ function hottelModel(latitud, Altura, r0, r1, rk, DIA, area, eff, panels, lossFa
 
   const WS = Math.PI;
 
-  const rateOfChange = toRadians(15 / 4);
+  const rateOfChange = toRadians(15);
   let WSchanging = WS * -1;
   const Gon = 1367 * (1 + 0.033 * Math.cos(((2 * Math.PI) / 365) * DIA));
 

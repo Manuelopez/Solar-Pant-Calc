@@ -28,7 +28,6 @@ $form.addEventListener('submit', (e) => {
       lost: parseFloat($lost.value)
     })
   };
-  console.log($altura.value);
 
   generateData(data);
 });
