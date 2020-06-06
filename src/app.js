@@ -16,7 +16,11 @@ app.post('/getSolarData', (req, res) => {
     req.body.altura,
     req.body.r0,
     req.body.r1,
-    req.body.rk
+    req.body.rk,
+    req.body.area,
+    req.body.eff,
+    req.body.panels,
+    req.body.lost
   );
   res.send({ csvData });
 });

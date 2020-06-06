@@ -1,39 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/light.min.css" />
   </head>
   <body>
     <h1>Calcula planta solar</h1>
     <form id="formID">
-      <label></label>
-      Latitud
-      <input
-        type="number"
-        step="0.00000000001"
-        max="100000"
-        id="latID"
-        required
-      />
-      <label>Altura</label>
-      <input
-        type="number"
-        step="0.00000000001"
-        min="0"
-        max="100000"
-        id="altID"
-        required
-      />
-      <label>Tipo de clima</label>
+      <label>Latitud:</label>
+      <input type="number" step="0.00000000001" placeholder="latidud en grado N" id="latID" required />
+      <label>Altura:</label>
+      <input type="number" step="0.00000000001" placeholder="en KM" id="altID" required />
+      <label>Tipo de clima:</label>
       <select id="tipoID">
         <option value="1">Tropical</option>
         <option value="2">Verano, latitud media</option>
         <option value="3">Verano, sub artico</option>
         <option value="4">Invierno, latitud media</option>
       </select>
+      <label>Numero de Panels:</label>
+      <input type="number" placeholder="cantidad de paneles" id="panelsID" required />
+      <label>Efficiencia:</label>
+      <input type="number" step="0.00000000001" placeholder="entre 0 y 1" id="effID" required />
+      <label>Area:</label>
+      <input type="number" step="0.00000000001" placeholder="metro cuadrado" id="areaID" required />
+      <label>Factor de Perdida</label>
+      <input type="number" step="0.00000000001" placeholder="entre 0 y 1" id="lostID" required />
       <input type="submit" value="submit" />
     </form>
   </body>

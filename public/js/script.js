@@ -2,6 +2,10 @@ const $altura = document.getElementById('altID');
 const $latitud = document.getElementById('latID');
 const $tipo = document.getElementById('tipoID');
 const $form = document.getElementById('formID');
+const $area = document.getElementById('areaID');
+const $eff = document.getElementById('effID');
+const $panels = document.getElementById('panelsID');
+const $lost = document.getElementById('lostID');
 let r0, r1, rk;
 
 $form.addEventListener('submit', (e) => {
@@ -17,9 +21,14 @@ $form.addEventListener('submit', (e) => {
       altura: parseInt($altura.value),
       r0,
       r1,
-      rk
+      rk,
+      area: parseInt($area.value),
+      eff: parseInt($eff.value),
+      panels: parseInt($panels.value),
+      lost: parseInt($lost.value)
     })
   };
+  console.log($altura.value);
 
   generateData(data);
 });
